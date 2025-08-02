@@ -38,8 +38,8 @@ jobs:
         id: run-tests
         run: npm run test
       - name: Upload test report
-        id: run-tests
         continue-on-error: true
+        id: run-tests
         uses: actions/upload-artifact@v4.6.2
         with:
           name: test-report
